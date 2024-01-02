@@ -1,0 +1,237 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(36, 174, 233);
+    padding: 0rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav img {
+    height: 3rem;
+    cursor: pointer;
+}
+
+.numberIcon {
+    border: 2px solid white;
+    position: relative;
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    display: flex;
+    gap: 2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.number {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    top: -10px;
+    left: 1.7rem;
+    background-color: red;
+    border-radius: 50%;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.icon {}
+
+.gridView {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+}
+
+.productStyle {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: gainsboro;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0.5rem;
+    transition: 0.7s;
+}
+
+.productStyle:hover {
+    transform: scale(1.01);
+    transition: 0.7s;
+}
+
+.productStyle img {
+    height: 8rem;
+    object-fit: contain;
+    aspect-ratio: 4/3;
+    mix-blend-mode: darken;
+}
+
+.productBTN {
+    padding: 0.4rem 1rem;
+    background-color: rgb(36, 174, 233);
+    border: none;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.productBTN:hover {
+    background-color: rgb(36, 174, 150);
+    color: whitesmoke;
+}
+
+.price {
+    font-weight: 700;
+    margin-top: 0.7rem;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.backWard {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+.cartContent {
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    width: 60vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    overflow-y: auto;
+}
+
+.cartItem {
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.cartItem img {
+    width: 5rem;
+    object-fit: contain;
+    aspect-ratio: 4/3;
+    mix-blend-mode: darken;
+}
+
+
+.cartItem {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.imgTitle{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 1rem;
+}
+
+.rightContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.incQytDec{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.priecCart{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.removeCart{
+    cursor: pointer;
+}
+
+
+.totalPrice{
+    margin: 1rem  1rem;
+    font-family: sans-serif;
+    background-color: rgb(36, 174, 233);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+}
+
+
+
+
+@media screen and (max-width:1058px) {
+
+    .gridView {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .gridView {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cartItem {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .cartContent {
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .incQytDec{
+        gap: 0.8rem;
+        font-size: 1.2rem;
+    }
+    .priecCart{
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .totalPrice{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:519px) {
+
+    .gridView {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .numberIcon {
+        font-size: 1rem;
+        padding: 0.1rem 0.4rem;
+        gap: 2rem;
+    }
+
+    .number {
+        height: 1rem;
+        width: 1rem;
+        left: 1.7rem;
+        line-height: 1rem;
+        font-size: 0.5rem;
+    }
+}

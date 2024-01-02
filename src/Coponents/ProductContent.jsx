@@ -1,0 +1,16 @@
+export const ProductContent = [
+    { id: 1, img: "https://rukminim2.flixcart.com/image/416/416/korijrk0/mouse/j/p/k/b175-logitech-original-imag359v76rygsaf.jpeg?q=70", title: "Mouse", price: 1000 },
+    { id: 2, img: "https://rukminim2.flixcart.com/image/416/416/kzzw5u80/keyboard/multi-device-keyboard/o/2/d/km3322w-km3322w-keyboard-mouse-combo-anti-fade-spill-resistant-original-imagbvyatqteauf2.jpeg?q=70", title: "Keyboard", price: 2000 },
+    { id: 3, img: "https://rukminim2.flixcart.com/image/416/416/kuyf8nk0/computer/g/z/q/mk1e3hn-a-laptop-apple-original-imag7yzmv57cvg3f.jpeg?q=70", title: "Macbook pro", price: 3000 },
+    { id: 4, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 5, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/monitor/i/u/w/-original-imagrkynyhv7vhzd.jpeg?q=70", title: "desktop", price: 5000 },
+    { id: 6, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 7, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 8, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 9, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 10, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 11, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 12, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 13, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+    { id: 14, img: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/p/q/i/-original-imagtc3kfyhgfcvr.jpeg?q=70", title: "iphone", price: 4000 },
+]

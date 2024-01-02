@@ -75,7 +75,17 @@
     background-color: rgb(36, 174, 233);
     border: none;
     border-radius: 0.4rem;
-    margin-top: 1rem;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.productBTNbuy {
+    padding: 0.4rem 1rem;
+    background-color: rgb(236, 198, 6);
+    border: none;
+    border-radius: 0.4rem;
+    margin: 1rem 1rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -135,20 +145,20 @@
     grid-template-columns: 1.5fr 1fr;
 }
 
-.imgTitle{
+.imgTitle {
     display: flex;
     align-items: center;
     font-weight: 700;
     gap: 1rem;
 }
 
-.rightContent{
+.rightContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.incQytDec{
+.incQytDec {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -156,18 +166,19 @@
     font-weight: 700;
     cursor: pointer;
 }
-.priecCart{
+
+.priecCart {
     font-size: 1.7rem;
     font-weight: 700;
 }
 
-.removeCart{
+.removeCart {
     cursor: pointer;
 }
 
 
-.totalPrice{
-    margin: 1rem  1rem;
+.totalPrice {
+    margin: 1rem 1rem;
     font-family: sans-serif;
     background-color: rgb(36, 174, 233);
     display: inline-block;
@@ -175,7 +186,26 @@
     border-radius: 0.4rem;
 }
 
+.backWardBuy {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(50, 50, 50, 0.8);
+}
 
+.buyNow {
+    width: 70vw;
+    height: 60vh;
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
 
 
 @media screen and (max-width:1058px) {
@@ -190,6 +220,7 @@
     .gridView {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .cartItem {
         display: grid;
         grid-template-columns: 1fr;
@@ -201,16 +232,17 @@
         height: 80vh;
     }
 
-    .incQytDec{
+    .incQytDec {
         gap: 0.8rem;
         font-size: 1.2rem;
     }
-    .priecCart{
+
+    .priecCart {
         font-size: 1.4rem;
         font-weight: 700;
     }
 
-    .totalPrice{
+    .totalPrice {
         font-size: 1.4rem;
     }
 }
@@ -233,5 +265,10 @@
         left: 1.7rem;
         line-height: 1rem;
         font-size: 0.5rem;
+    }
+
+    .buyNow{
+        width: 70vw;
+        height: 80vh;
     }
 }

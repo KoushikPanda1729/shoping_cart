@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './UI/Style.module.css'
 import { useCreateContextUseContext } from './ProviderContext'
 import { toast } from 'react-toastify';
+import BuyingModel from './BuyingModel';
+import Buy from './Buy';
 const DisplayProduct = ({ id, img, title, price }) => {
     const { addCart, carts } = useCreateContextUseContext();
     const newCart = {
@@ -10,6 +12,15 @@ const DisplayProduct = ({ id, img, title, price }) => {
         title: title,
         price: price,
         quantity: 1
+    }
+
+    const [buyOpen, setBuyOpen] = useState(false)
+    const buyClose = () => setBuyOpen(false)
+
+    if (buyOpen) {
+        document.documentElement.style.overflowY = "hidden"
+    } else {
+        document.documentElement.style.overflowY = "auto"
     }
     return (
         <div className={style.productStyle}>
@@ -27,6 +38,10 @@ const DisplayProduct = ({ id, img, title, price }) => {
                 toast.info("Added")
                 addCart(newCart)
             }}>Add to cart</button>
+            <button className={style.productBTNbuy} onClick={() => {
+                setBuyOpen(true)
+            }}>Buy now</button>
+            {buyOpen && <BuyingModel buyClose={buyClose}><Buy /></BuyingModel>}
         </div>
     )
 }

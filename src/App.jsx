@@ -13,7 +13,7 @@ const App = () => {
     <ProviderContext>
       <Header />
       <ProductMap />
-      <ToastContainer position="top-right"
+      <ToastContainer position="bottom-right"
         autoClose={500}
         hideProgressBar={true}
         newestOnTop={true}
